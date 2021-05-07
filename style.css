@@ -1,0 +1,107 @@
+:root {
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+    --verylightgrey: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background: var(--verylightgrey);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--verylightgrey);
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+p {
+    color: var(--Transparentwhiteparagraphs);
+    line-height: 25px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.cars-card {
+    width: 350px;
+    padding: 60px;
+}
+
+.sedan {
+    background: var(--brightorange);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.suv {
+    background: var(--darkcyan);
+}
+
+.luxury {
+    background: var(--verydarkcyan);
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+a.button {
+    border: 2px solid var(--verylightgrey);
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 30px 0 0 0;
+    display: inline-block;
+    mix-blend-mode: screen;
+    text-decoration: none;
+    color: #000;
+    background: var(--verylightgrey);
+  }
+  
+  a.button:hover {
+    background: #000; /* Green */
+    color: white;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .sedan {
+        background: var(--brightorange);
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .suv {
+        background: var(--darkcyan);
+    }
+    
+    .luxury {
+        background: var(--verydarkcyan);
+        border-radius: 0 10px 10px 0px;
+    }
+    a.button {
+        margin-top: 60px;
+    }
+  }
+  
